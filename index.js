@@ -15,10 +15,24 @@ console.log(undefined)
 відповідає на питання, що в ній
 */
 
+// домашня робота:
+const userAge = 23;
+const isUserAdult = true;
+const userEmail = 'user@gmail.com';
+const programmingLanguage = 'C++';
+const havePet = false;
+const AMOUNT_SEASONS_OF_YEAR = 4;
+
+
+
+
+
+
+// урок:
 let userName = 'Brad';
 console.log(userName);
 
-let userAge; //оголошення
+// let userAge; //оголошення
 console.log(typeof userAge);
 userAge = 59n; //ініціалізація
 console.log(typeof userAge);
