@@ -1,3 +1,4 @@
+// 02.01.2023
 // alert(123)
 // window.alert(456)
 
@@ -16,53 +17,124 @@ console.log(undefined)
 */
 
 // домашня робота:
-const userAge = 23;
-const isUserAdult = true;
-const userEmail = 'user@gmail.com';
-const programmingLanguage = 'C++';
-const havePet = false;
-const AMOUNT_SEASONS_OF_YEAR = 4;
+// let userAge = 23;
+// let isUserAdult = true;
+// const userEmail = 'user@gmail.com';
+// const programmingLanguage = 'C++';
+// let havePet = false;
+// const AMOUNT_SEASONS_OF_YEAR = 4;
 
-
-
-
-
-
-// урок:
-let userName = 'Brad';
-console.log(userName);
-
-// let userAge; //оголошення
-console.log(typeof userAge);
-userAge = 59n; //ініціалізація
-console.log(typeof userAge);
-
-
-const userYearOfBirth = 1963;
-
+// // урок:
+// let userName = 'Brad';
 // console.log(userName);
-// console.log(userAge);
-console.log('user age:'. userAge)
 
-userAge = 60;
-userName = "Bradly";
+// // let userAge; //оголошення
+// console.log(typeof userAge);
+// userAge = 59n; //ініціалізація
+// console.log(typeof userAge);
 
-const isUserMale = true;
-// const userGender = 'male';
-// userGender = 'female'; //error
+// const userYearOfBirth = 1963;
 
-const AMOUNT_DAYS_WEEK = 7;
+// // console.log(userName);
+// // console.log(userAge);
+// console.log('user age:'. userAge)
 
+// userAge = 60;
+// userName = "Bradly";
 
+// const isUserMale = true;
+// // const userGender = 'male';
+// // userGender = 'female'; //error
 
+// const AMOUNT_DAYS_WEEK = 7;
 
+// let number = 12;
 
-let number = 12;
+// {
 
-{
+//     let number =  89;
+//     console.log(number);
+// }
 
-    let number =  89;
-    console.log(number);
+// console.log(number);
+
+// 03.01.2023
+
+// let number = 30;
+// let number2 = 15;
+// number = number - 8;
+// console.log(number);
+// number = number * 3;
+// console.log(number);
+// number2 = number2 % 2;
+// console.log(number2);
+// number2 = number2 + 15;
+// console.log(number2);
+// number = number / 2;
+// console.log(number);
+// let result = number + number2;
+// console.log(result);
+
+// let number = 27;
+// if (number < 0) {
+//   console.log("negative");
+// } else {
+//   console.log("positive");
+// }
+
+// let number = 27;
+// if (number > 0) {
+//   console.log("positive");
+// } else if (number === 0) {
+//   console.log("zero");
+// } else if (number < 0) {
+//   console.log("negative");
+// }
+
+// let number = 1;
+
+// if (number%2 === 0) {
+//   console.log("even");
+// } else {
+//   console.log("odd");
+// }
+
+// if (number > 7 && number % 3 === 0) {
+//   console.log("win");
+// } else {
+//   console.log("lose");
+// }
+
+// if (number<=7 || number%3) {
+//     console.log("lose");
+//   } else {
+//     console.log("win");
+//   }
+
+// let number = 5;
+
+// if (number % 2 === 0 && number > 0) {
+//   number += 5;
+// } else if (number % 2 && number > 0) {
+//   number *= 2;
+// } else if (number % 2 === 0 && number < 0) {
+//   number = -number;
+// }
+//   console.log(number);
+
+// if (number1, number 2% 2 == 0)
+
+let number1 = 3;
+let number2 = 2;
+if (number1 === number2) {
+  console.log(number1 * number2);
+} else if (number1 > number2 || number1 < number2) {
+  console.log(number1 / number2);
+} else if (number1 === 0 || number2 === 0) {
+  console.log("true");
+} else if (number1 === 0 && number2 === 0) {
+  console.log("NaN");
 }
-
-console.log(number);
+// else if (number1 === 0 && number2 === 0) {
+//     console.log('NaN');
+// }
