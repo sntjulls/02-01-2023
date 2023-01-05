@@ -82,12 +82,12 @@ console.log(undefined)
 //   console.log("positive");
 // }
 
-// let number = 27;
-// if (number > 0) {
+// let number3 = -27;
+// if (number3 > 0) {
 //   console.log("positive");
-// } else if (number === 0) {
+// } else if (number3 === 0) {
 //   console.log("zero");
-// } else if (number < 0) {
+// } else if (number3 < 0) {
 //   console.log("negative");
 // }
 
@@ -124,17 +124,49 @@ console.log(undefined)
 
 // if (number1, number 2% 2 == 0)
 
-let number1 = 3;
-let number2 = 2;
-if (number1 === number2) {
-  console.log(number1 * number2);
-} else if (number1 > number2 || number1 < number2) {
-  console.log(number1 / number2);
-} else if (number1 === 0 || number2 === 0) {
-  console.log("true");
-} else if (number1 === 0 && number2 === 0) {
-  console.log("NaN");
-}
+// let number1 = -1;
+// let number2 = 3;
+// if (number1 === number2) {
+//   console.log(number1 * number2);
+
+// if (number1 > 0 & number2 > 0 || number1 < 0 & number2 < 0){
+
+// number1 * number2;
+
+//   console.log(number1 * number2);
+//   }
+// else if (number1 > number2 || number1 < number2) {
+//   console.log(number1 / number2);
+// } else if (number1 === 0 || number2 === 0) {
+//   console.log("true");
+// } else if (number1 === 0 && number2 === 0) {
+//   console.log("NaN");
+// }
+
 // else if (number1 === 0 && number2 === 0) {
 //     console.log('NaN');
 // }
+
+let number1 = 0;
+let number2 = 0;
+let result;
+if (number1 > 0 && number2 > 0 || number1 < 0 && number2 < 0) {
+  result = number1 * number2;
+}
+else if (number1 > 0 && number2 < 0 || number1 < 0 && number2 > 0) {
+  result = number1 / number2;
+} else if (number1 === 0 || number2 === 0) {
+  result = number1 || number2;
+} else if (number1 === 0 && number2 === 0) {
+  result = NaN;
+}
+console.log(result);
+
+дз 2 04.01.23
+let number3 = 17;
+if (!(number3 >= 0 && number3 % 2 === 0 && number3 % 3 === 0 && number3 % 6 === 0)
+) {
+  console.log("lose");
+} else {
+  console.log("win");
+}
