@@ -147,26 +147,181 @@ console.log(undefined)
 //     console.log('NaN');
 // }
 
-let number1 = 0;
-let number2 = 0;
-let result;
-if (number1 > 0 && number2 > 0 || number1 < 0 && number2 < 0) {
-  result = number1 * number2;
-}
-else if (number1 > 0 && number2 < 0 || number1 < 0 && number2 > 0) {
-  result = number1 / number2;
-} else if (number1 === 0 || number2 === 0) {
-  result = number1 || number2;
-} else if (number1 === 0 && number2 === 0) {
-  result = NaN;
-}
-console.log(result);
+// let number1 = 0;
+// let number2 = 0;
+// let result;
+// if (number1 > 0 && number2 > 0 || number1 < 0 && number2 < 0) {
+//   result = number1 * number2;
+// }
+// else if (number1 > 0 && number2 < 0 || number1 < 0 && number2 > 0) {
+//   result = number1 / number2;
+// } else if (number1 === 0 || number2 === 0) {
+//   result = number1 || number2;
+// } else if (number1 === 0 && number2 === 0) {
+//   result = NaN;
+// }
+// console.log(result);
 
-дз 2 04.01.23
-let number3 = 17;
-if (!(number3 >= 0 && number3 % 2 === 0 && number3 % 3 === 0 && number3 % 6 === 0)
-) {
-  console.log("lose");
-} else {
-  console.log("win");
+// дз 2 04.01.23
+// let number3 = 17;
+// if (!(number3 >= 0 && number3 % 2 === 0 && number3 % 3 === 0 && number3 % 6 === 0)
+// ) {
+//   console.log("lose");
+// } else {
+//   console.log("win");
+// }
+
+// 06.01.23
+// const userInput = prompt("Enter");
+// if (userInput === "" || userInput === null || Number.isNaN(Number(userInput))) {
+//   console.log("Error");
+// } else {
+//   console.log(userInput, Number(userInput));
+// }
+
+// function logSumTwoUserInputNumbers() {
+//   const userInput1 = prompt("Enter number: ");
+//   const userInput2 = prompt("Enter number: ");
+
+//  const checkUserInput1 = userInput1 === "" || userInput1 === null || Number.isNaN(Number(userInput1));
+
+//   const checkUserInput2 =  userInput2 === "" || userInput2 === null || Number.isNaN(Number(userInput2));
+
+//   if (
+//     userInput1 === "" ||
+//     userInput1 === null ||
+//     Number.isNaN(Number(userInput1)) ||
+//     userInput2 === "" ||
+//     userInput2 === null ||
+//     Number.isNaN(Number(userInput2))
+//   ) {
+//     console.log("error, value must be number!");
+//   }
+// }
+
+/**
+ *
+ *
+ */
+
+// function logSumTwoUserInputNumbers() {
+//   const userInput1 = prompt("Enter number: ", 6);
+//   const userInput2 = prompt("Enter number: ", 3);
+
+//   const checkUserInput1 =
+//     userInput1 === "" ||
+//     userInput1 === null ||
+//     Number.isNaN(Number(userInput1));
+//   const checkUserInput2 =
+//     userInput2 === "" ||
+//     userInput2 === null ||
+//     Number.isNaN(Number(userInput1));
+
+//   if (checkNumber(userInput1) === false || checkNumber(userInput2) === false) {
+//     console.log("error! value must be a number!");
+//   } else {
+//     console.log(getSumTwoNumbers(Number(userInput1), Number(userInput2)));
+//   }
+
+//   else {
+//     const summa = Number(userInput1) + Number(userInput2);
+//     console.log(summa);
+//   }
+// }
+// /**
+//  * get summa two number
+//  * @param {number} number1
+//  * @param {number} number2
+//  * @returns {number}
+//  */
+// function getSumTwoNumbers(number1, number2) {
+//   //   const summa = Number(number1) + Number(number2);
+//   //   return summa;
+
+//   // функція повертмає суму двох чисел:
+//   return number1 + number2;
+// }
+// /**
+//  *
+//  * @param {any} value
+//  * @returns {boolean}
+//  */
+// function checkNumber(value) {
+//   const checkValue =
+//     userInput1 === "" ||
+//     userInput1 === null ||
+//     Number.isNaN(Number(userInput1));
+//   return !checkValue;
+// }
+
+// console.log(getSumTwoNumbers(Number(userInput1), Number(userInput2)));
+
+// практична 1 06.01
+// /**
+//  *
+//  * @param {any} value1
+//  * @param {any} value2
+//  * @returns {any | null}
+//  */
+// function getMaxValue(value1, value2) {
+//   if (typeof value1 === typeof value2) {
+//     if (value1 > value2) {
+//       return value1;
+//     }
+//     return value2;
+//   }
+//   return null;
+// }
+// console.log(getMaxValue("s", 5));
+// console.log(getMaxValue(40, 5));
+
+// практична 2 06.01 Напишіть функцію, яка приймає число, і визначає чи парне воно (повертає булевий тип). isEven
+
+// домашнє завдання 06.01
+/**
+ *
+ * @param {number} number
+ * @returns {boolean}
+ */
+function isEven(number) {
+  return number % 2 == 0;
 }
+console.log(isEven(7));
+console.log(isEven(22));
+
+
+// function isEven(number) {
+//   if (number % 2 == 0) {
+//     return true;
+//   }
+//   else {
+//     return number;
+//   }
+// }
+// console.log(isEven(7));
+// console.log(isEven(5));
+
+// function  func(){
+//     return true;
+//   }
+//   isBool = func();
+//   console.log(typeof (isBool));
+
+//   let isBool = func();
+//   console.log(typeof (isBool));
+
+//   console.log(func(6));
+
+// console.log(isEven(5));
+// console.log(isEven(8));
+
+//   if (checkNumber(userInput1) === false || checkNumber(userInput2) === false) {
+//     console.log("error! value must be a number!");
+//   } else {
+//     console.log(getSumTwoNumbers(Number(userInput1), Number(userInput2)));
+//   }
+
+//   else {
+//     const summa = Number(userInput1) + Number(userInput2);
+//     console.log(summa);
+//   }
